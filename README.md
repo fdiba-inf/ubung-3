@@ -1,7 +1,7 @@
 # Übung 3
 Quellcode der Vorlesung: https://github.com/fdiba-inf/vorlesung
 ## Repl.it öffnen
-Klicken Sie die Taste _"Work in Repl.it"_
+Klicken Sie die Taste _"Work in Repl.it"_.
 ## Aufgabe 1. Nummernzähler
 Erstellen Sie eine neue Klasse mit dem Namen _NumberCounter_ im Paket _exercise3_. 
 Beim Starten soll die Applikation eine unbestimmte Anzahl von Ganzzahlen bearbeiten. 
@@ -26,7 +26,7 @@ Prime number: <true/false>
 ## Aufgabe 3. Nummernsuche
 Erstellen Sie eine neue Klasse mit dem Namen _NumberSearch_ im Paket _exercise3_. 
 Das Programm zeigt alle Zahlen von _100_ bis _1000_, die durch _fünf_ und _sechs_ teilbar sind. 
-Die Zahlen werden zehn pro Zeile ausgegeben und durch genau ein Leerzeichen getrennt.
+Die Zahlen werden _zehn_ pro Zeile ausgegeben und durch genau ein Leerzeichen getrennt.
 Benutzen Sie eine for-Schleife.
 ``` 
 120 150 180 210 240 270 300 330 360 390
@@ -36,8 +36,8 @@ Benutzen Sie eine for-Schleife.
 ## Aufgabe 4. Name
 Erstellen Sie eine neue Klasse mit dem Namen _NamePrinter_ im Paket _exercise3_.
 Beim Starten soll der Benutzer einen Namen (Text) in der Konsole eingeben. 
-Dann wird jeder Buchstabe des Namens auf eine neue Zeile ausgegeben. Benutzen Sie eine for-Schleife. 
-Beispiel Eingabe: _FDIBA_
+Dann wird jeder Buchstabe des Namens auf eine neue Zeile ausgegeben. Benutzen Sie eine for-Schleife.
+z.B. Eingabe: _FDIBA_
 ``` 
 * F *
 * D *
@@ -58,7 +58,7 @@ Angle: <value><r/d>
 Erstellen Sie eine neue Klasse mit dem Namen _Triangle_ im Paket _exercise3_ zur Bearbeitung von einem Dreieck. 
 Das Dreieck wird mit seinen drei Seiten angegeben: _a_, _b_ und _c_. 
 Das Programm soll prüfen, ob die angegebenen Werte korrekt sind: _a_, _b_ und _c_ sind positiv, die Summe jeder zwei Seiten ist größer als die dritte Seite. 
-Wenn die angegebenen Werte korrekt sind, wird die Fläche berechnet und wird der Typ des Dreiecks (gleichseitig (_equilateral_), gleichschenklig (_isosceles_), ungleichseitig (_scalene_)) bestimmt.
+Wenn die angegebenen Werte korrekt sind, wird die Fläche berechnet und der Typ des Dreiecks (gleichseitig (_equilateral_), gleichschenklig (_isosceles_), ungleichseitig (_scalene_)) bestimmt.
 Wenn die angegebenen Werte nicht korrekt sind, wird _"Values are not correct!"_ ausgegeben.
 Organisieren Sie eine do-while-Schleife, um ein neues Dreieck zu analysieren. 
 Die Schleife wird unterbrochen, wenn _0_ oder ein Minuswert für _a_, _b_ oder _c_ eingegeben wird.
