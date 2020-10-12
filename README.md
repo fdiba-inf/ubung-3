@@ -1,73 +1,78 @@
-# Übung 2
+# Übung 3
 Quellcode der Vorlesung: https://github.com/fdiba-inf/vorlesung
-
 ## Repl.it öffnen
-Klicken Sie https://repl.it/auth/github/get. Wählen Sie Ihres Repository **fdiba-inf/ubung-2-{GitHub Benutzername}** unter _run your repos_.
-
-## Aufgabe 0. Eingabe
-Gehen Sie zum Verzeichnis _src/exercise2_. Klicken Sie die Datei _BasicInput.java_. \
-\
-Hier erscheint ein neues Schlüsselwort **import**. Es ermöglicht, dass man schon geschriebene Klassen und Paketen in einer Klasse lokal verfügbar macht. 
-Obwohl dieses Schlüsselwort gar nicht notwendig ist, um ein Programm zu schreiben, macht es das Programmieren bequemer und übersehbarer z.B. ohne import soll die Anweisung \
-`Scanner input = new Scanner(System.in);` \
-so umgeschrieben werden \
-`java.util.Scanner input = new java.util.Scanner(System.in);` \
-Dabei ist _java.util_ das Paket und _Scanner_ ist die Klasse, die sich in diesem Paket befindet. \
-\
-Die Klasse _Scanner_ (im Paket _java.util_) erlaubt das Lesen von der Tastatur (_System.in_) und 
-_Math_ (im Paket _java.lang_) bietet die mathematischen Operationen wie Quadratwurzel. 
-Standarte Klassen aus dem Paket java.lang (wie _System_, _Math_) sollen nicht importiert werden. \
-\
-Java unterscheidet zwischen kleinen und großen Buchstaben. Schreiben Sie bei allen Namen den ersten Buchstaben klein und nur bei den Klassen groß z.B.
-* Variablen: _a, b, c, number, squareRoot_
-* Methoden: _main, println, sqrt_
-* Pakete: _exercise1, exercise2, java.util, java.lang_
-* Klassen: _HelloWorld, EvenOrOddNumber, QuadraticEquation, Scanner, Math_
-
-## Aufgabe 1. Pi Annäherung
-Erstellen Sie eine neue Klasse mit dem Namen _PiApproximation_ im Paket _exercise2_. 
-Beim Starten soll die Applikation die Zahl Pi nach der angegebenen Formel berechnen und ausgeben. \
-<img src="https://github.com/fdiba-inf/vorlesung/raw/master/images/exercise2/pi.png" width="400">
+Klicken Sie die Taste _"Work in Repl.it"_
+## Aufgabe 1. Nummernzähler
+Erstellen Sie eine neue Klasse mit dem Namen _NumberCounter_ im Paket _exercise3_. 
+Beim Starten soll die Applikation eine unbestimmte Anzahl von Ganzzahlen bearbeiten. 
+Das Programm bestimmt, wie viele positive und negative Werte gelesen wurden und berechnet die Summe und den Durchschnitt der Eingabewerte. 
+Es endet, wenn _0_ eingegeben wird.
+Zeigen Sie die Summe und den Durchschnitt als Fließkommazahlen an. 
+Benutzen Sie eine while-Schleife.
 ``` 
-Pi: <value>
+Positive numbers: <value>
+Negative numbers: <value>
+Sum: <value>
+Average: <value>
 ``` 
-## Aufgabe 2. Kreis
-Erstellen Sie eine neue Klasse mit dem Namen _Circle_ im Paket _exercise2_. 
-Beim Starten soll der Benutzer den Radius in der Konsole eingeben. 
-Dann werden der Umfang und die Fläche nach der angegebenen Formeln berechnet und ausgegeben. \
-<img src="https://github.com/fdiba-inf/vorlesung/raw/master/images/exercise2/circle.png" width="300">
+## Aufgabe 2. Primzahl
+Erstellen Sie eine neue Klasse mit dem Namen _PrimeNumber_ im Paket _exercise3_.
+Beim Starten soll der Benutzer eine Zahl _n (n > 2)_ in der Konsole eingeben.
+Dann wird bestimmt, ob die Zahl eine Primzahl ist.
+Benutzen Sie eine while-Schleife.
 ``` 
-Circumference: <value>
+Prime number: <true/false>
+``` 
+## Aufgabe 3. Nummernsuche
+Erstellen Sie eine neue Klasse mit dem Namen _NumberSearch_ im Paket _exercise3_. 
+Das Programm zeigt alle Zahlen von _100_ bis _1000_, die durch _fünf_ und _sechs_ teilbar sind. 
+Die Zahlen werden zehn pro Zeile ausgegeben und durch genau ein Leerzeichen getrennt.
+Benutzen Sie eine for-Schleife.
+``` 
+120 150 180 210 240 270 300 330 360 390
+420 450 480 510 540 570 600 630 660 690
+720 750 780 810 840 870 900 930 960 990
+``` 
+## Aufgabe 4. Name
+Erstellen Sie eine neue Klasse mit dem Namen _NamePrinter_ im Paket _exercise3_.
+Beim Starten soll der Benutzer einen Namen (Text) in der Konsole eingeben. 
+Dann wird jeder Buchstabe des Namens auf eine neue Zeile ausgegeben. Benutzen Sie eine for-Schleife. 
+Beispiel Eingabe: _FDIBA_
+``` 
+* F *
+* D *
+* I *
+* B *
+* A *
+``` 
+## Aufgabe 5. Winkelabmessung
+Erstellen Sie eine neue Klasse mit dem Namen _AngleCalculation_ im Paket _exercise3_ zur Umrechnung zwischen Radiant (_r_) und Grad (_d_) von mehreren Winkeln. 
+Der Wert des Winkels und seine Einheit (_r_ oder _d_) werden eingegeben. 
+Die Berechnung wird nach der Formel _Radiant = Grad * π / 180_ ausgeführt. 
+Das Programm wird bei inkorrekter Eingabe der Einheit unterbrochen. 
+Benutzen Sie eine do-while-Schleife.
+``` 
+Angle: <value><r/d>
+``` 
+## Aufgabe 6. Dreieck
+Erstellen Sie eine neue Klasse mit dem Namen _Triangle_ im Paket _exercise3_ zur Bearbeitung von einem Dreieck. 
+Das Dreieck wird mit seinen drei Seiten angegeben: _a_, _b_ und _c_. 
+Das Programm soll prüfen, ob die angegebenen Werte korrekt sind: _a_, _b_ und _c_ sind positiv, die Summe jeder zwei Seiten ist größer als die dritte Seite. 
+Wenn die angegebenen Werte korrekt sind, wird die Fläche berechnet und wird der Typ des Dreiecks (gleichseitig (_equilateral_), gleichschenklig (_isosceles_), ungleichseitig (_scalene_)) bestimmt.
+Wenn die angegebenen Werte nicht korrekt sind, wird _"Values are not correct!"_ ausgegeben.
+Organisieren Sie eine do-while-Schleife, um ein neues Dreieck zu analysieren. 
+Die Schleife wird unterbrochen, wenn _0_ oder ein Minuswert für _a_, _b_ oder _c_ eingegeben wird.
+![Triangle Area](https://github.com/fdiba-inf/vorlesung/raw/master/images/exercise3/area.jpg)
+``` 
 Area: <value>
+Triangle: <equilateral/isosceles/scalene>
 ``` 
-## Aufgabe 3. Summe der Ziffern
-Erstellen Sie eine neue Klasse mit dem Namen _SumOfDigits_ im Paket _exercise2_.
-Beim Starten soll der Benutzer eine Zahl zwischen _0_ und _999_ in der Konsole eingeben. 
-Dann wird die Summe ihrer Ziffern berechnet und ausgegeben.
-``` 
-Sum of digits: <value>
-``` 
-## Aufgabe 4. Wochentag
-Erstellen Sie eine neue Klasse mit dem Namen _DayOfWeek_ im Paket _exercise2_.
-Beim Starten soll der Benutzer eine Zahl zwischen _1_ und _7_ in der Konsole eingeben. 
-Dann wird der Wochentag (_Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday_) berechnet und ausgegeben. 
-Wenn die eingegebene Zahl nicht zwischen _1_ und _7_ liegt, soll die Applikation den Text "_Invalid day_" ausgeben.
-``` 
-Day of week: <value>
-``` 
-## Aufgabe 5. Gerade oder ungerade Zahl
-Erstellen Sie eine neue Klasse mit dem Namen _EvenOrOddNumber_ im Paket _exercise2_.
-Beim Starten soll der Benutzer eine Zahl in der Konsole eingeben. 
-Dann wird berechnet, ob die Zahl gerade oder ungerade ist. Das Ergebnis wird ausgegeben.
-``` 
-Number is <even/odd>
-``` 
-## Aufgabe 6. Quadratgleichung
-Erstellen Sie eine neue Klasse mit dem Namen _QuadraticEquation_ im Paket _exercise2_.
-Diese Applikation soll alle Fälle einer Quadratgleichung (_ax^2 + bx + c = 0_) behandeln: keine Lösung, eine Lösung, zwei Lösungen, unendlich viele Lösungen.
-Imaginäre Werte werden nicht speziell verarbeitet. Falls das vorkommt (Diskriminante < 0), drucken Sie den Text "_Imaginary values_".
-Benutzen Sie dabei das folgende Flussdiagramm/Blockschema:
-![Quadratgleichung Flussdiagramm](https://github.com/fdiba-inf/vorlesung/raw/master/images/exercise2/quadratic-equation.png)
 ## Achtung! Achtung! Achtung!
-Wenn Sie alle Aufgaben gemacht haben, sollen Sie die Lösungen in _GitHub_ hochladen.
-
+Wenn Sie alle Aufgaben gemacht haben, sollen Sie die Lösungen in _GitHub_ hochladen. 
+Wenn "Version Control" nicht verfügbar ist, geben Sie die folgenden Befehle in die Konsole ein:
+``` 
+git pull
+git add .
+git commit -m "Some message"
+git push
+``` 
