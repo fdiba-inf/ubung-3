@@ -62,7 +62,8 @@ Wenn die angegebenen Werte korrekt sind, wird die Fläche berechnet und der Typ 
 Wenn die angegebenen Werte nicht korrekt sind, wird _"Values are not correct!"_ ausgegeben.
 Organisieren Sie eine do-while-Schleife, um ein neues Dreieck zu analysieren. 
 Die Schleife wird unterbrochen, wenn _0_ oder ein Minuswert für _a_, _b_ oder _c_ eingegeben wird.
-![Triangle Area](https://github.com/fdiba-inf/vorlesung/raw/master/images/exercise3/area.jpg)
+
+![Triangle Area](https://github.com/fdiba-inf/vorlesung/blob/main/images/exercise3/area.jpg)
 ``` 
 Area: <value>
 Triangle: <equilateral/isosceles/scalene>
